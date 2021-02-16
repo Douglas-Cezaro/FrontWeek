@@ -41,7 +41,6 @@ p {
   margin: 0 auto;
   padding: 36px 16px;
   height: 85vh;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
