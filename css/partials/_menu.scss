@@ -1,5 +1,7 @@
 header {
   width: 100%;
+  position: fixed;
+  z-index: 800;
   padding-top: 16px;
 }
 
@@ -28,6 +30,9 @@ header {
 
   li {
     margin-left: 24px;
+  }
+  @include responsive() {
+    display: none;
   }
 }
 .logo {
@@ -72,6 +77,20 @@ header {
   }
 }
 
+.bx {
+  width: 48px;
+  height: 48px;
+
+  background-color: $white;
+  border-radius: 8px;
+
+  display: none;
+
+  @include responsive() {
+    display: block;
+  }
+}
+
 .nav-social {
   display: flex;
   justify-content: center;
@@ -96,5 +115,8 @@ header {
         transform: translate3d(0, -3px, 0);
       }
     }
+  }
+  @include responsive() {
+    display: none;
   }
 }
